@@ -1,0 +1,1607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0014)about:internet -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <!--***MCTEMPLATE1***--><TITLE>ADVOCATESHIP MODEL TEST</TITLE>
+<meta http-equiv="X-UA-Compatible"content="IE=EmulateIE7">
+<!--***Version20***-->
+<style type='text/css'>#feedbacker{position:absolute; visibility: hidden; height:auto;margin:10 auto;overflow:visible;border:1px;border-style:solid; background-color:#FFFFFF; padding:5px;}</style>
+<!--SINGLE QUESTION TEMPLATE: PLEASE NOTE THAT ALTERATIONS TO THE ORIGINAL TEMPLATES ARE ONLY POSSIBLE IN THE REGISTERED VERSION-->
+<STYLE TYPE='text/css'><!--<!-- html, body {margin:0; padding:0; width:100%; height:100%; }#background{position:absolute; z-index:1; width:100%; height:105%;}#scroller {position:absolute; width:100%; height:100%; top:0; left:0; overflow:auto; z-index:2;} INPUT{ cursor=default; }TEXTAREA{PADDING-RIGHT:5px;PADDING-LEFT:5px;PADDING-BOTTOM:5px;PADDING-TOP:5px;FONT-WEIGHT:normal;background-color:white;font-family:'Arial Unicode MS','Arial','Microsoft Sans Serif';font-size:16pt;color:'black';font-style=normal;}--></style>
+<style type="text/css">
+#new {position:absolute; z-index:1; height: 1px; width:100%; top: 1800px; left: 0px; visibility: hidden;background-color:white; }
+</style>
+<script type="text/javascript">
+<!---
+var browserName = ""; 
+var Express=0;
+var ua = navigator.userAgent.toLowerCase(); 
+if ( ua.indexOf( "opera" ) != -1 ) { 
+browserName = "opera"; 
+} 
+else if ( ua.indexOf( "chrome" ) != -1 ) { 
+browserName = "chrome";
+} 
+else if ( ua.indexOf( "msie" ) != -1 ) { 
+browserName = "msie"; 
+} 
+else if ( ua.indexOf( "safari" ) != -1 ) { 
+browserName = "safari"; 
+} 
+else if ( ua.indexOf( "mozilla" ) != -1 ) { 
+if ( ua.indexOf( "firefox" ) != -1 ) { 
+browserName = "firefox"; 
+} else { 
+browserName = "firefox"; 
+}
+}
+var Critical = 0;
+var FFPresent="no";
+var MHT=0;
+var PassCent = 0;
+var passed = 0;
+var myLayer = "";
+var picture = "";
+var showPicture = "";
+var SCORM = false;
+var AllowContinue = true;
+if (location.href.indexOf('?TM') != -1){FULL=0;} 
+resultString = "";
+
+function closeWindow() {top.close();}
+function hideFeedback(){ 
+var showFeedback = document.getElementById("feedbacker"); 
+showFeedback.style.visibility = "hidden";
+}
+var posx;var posy;var fbX;var fbY;
+function getMouse(e){
+if (!e) e = window.event; 
+fbX=mouseX(e);
+fbY=mouseY(e);
+}
+function mouseX(evt) {
+if (evt.pageX) return evt.pageX;
+else if (evt.clientX)
+return evt.clientX + (document.documentElement.scrollLeft ?
+document.documentElement.scrollLeft :
+document.body.scrollLeft);
+else return null;
+}
+function mouseY(evt) {
+if (evt.pageY) return evt.pageY;
+else if (evt.clientY)
+return evt.clientY + (document.documentElement.scrollTop ?
+document.documentElement.scrollTop :
+document.body.scrollTop);
+else return null;
+}
+function showTip(w,h,hint){
+var showFeedback = document.getElementById("feedbacker");
+try{
+}
+catch(err){
+}
+if (showAnswer==1){
+hint = hint + "<br><br><center><INPUT TYPE='BUTTON' VALUE=' OK ' onClick='hideFeedback()'></center>";
+}
+showFeedback.style.top =   fbY-100;   
+showFeedback.style.left= fbX+250;
+document.all['feedbacker'].innerHTML= hint;
+showFeedback.style.visibility ="visible";
+}
+
+function StatusQuo(){doit();}
+var writtenAnswer = 0;
+var quizStatus1="The correct answer is";
+var commas ="\"";
+var placer = location.href;var goLoca1=0;var goLoca2="about:blank";var goExit=0;
+var verdict = "";
+resultString = "";
+resultString2="";
+function decodeIT(verdict) {
+resultString2="";
+resultString=verdict+" ";
+var tester;
+tester= resultString.indexOf('&#');
+if (tester < 0) {
+return resultString;
+}
+	if (verdict != '') {
+var uniText = verdict.substring(0,verdict.length-1);
+            var i = 0;
+var testText = uniText.substring(2,uniText.length).split(";&#")
+for (i=0;i<testText.length;i++)
+			resultString = testText[i];
+if (resultString2==""){
+resultString2 = resultString;
+}
+		resultString = ""
+		for (i=0;i<testText.length;i++)
+			resultString = resultString + String.fromCharCode(testText[i]);
+return resultString;
+	}
+}
+function goLoca(){return;}
+var up,down;var mins,secs;
+function Minutes(data) {
+for(var i=0;i<data.length;i++)
+if(data.substring(i,i+1)==":")
+break;
+return(data.substring(0,i));
+}
+function Seconds(data) {
+for(var i=0;i<data.length;i++)
+if(data.substring(i,i+1)==":")
+break;
+return(data.substring(i+1,data.length));
+}
+function Display(min,sec) {
+var disp;
+if(min<=9) disp=" 0";
+else disp=" ";
+disp+=min+":";
+if(sec<=9) disp+="0"+sec;
+else disp+=sec;
+return(disp);
+}
+function Down() {
+mins=1*Minutes(document.timex.given.value);
+secs=0+Seconds(document.timex.given.value);
+DownRepeat();
+}
+function DownRepeat() {
+secs--;
+if(secs==-1) {
+secs=59; mins--;
+}
+document.timex.taken.value=Display(mins,secs);
+if((mins==0)&&(secs==0)){
+goExit=1;
+return;
+}
+else down=setTimeout("DownRepeat()",1000);
+}
+if (navigator.appName !="Netscape"){
+setInterval("moveback()",150);
+function moveback(){
+  }
+}
+if (document.images) { img1 = new Image(); img1.src = "Resources/Images/arrow1.gif" }
+var tries="0";
+function trimString (str)
+{ str = this != window? this : str; return str.replace(/^\s+/g, '').replace(/\s+$/g, '');
+ }
+// Resize Bug Correction
+function disableselect(e){
+return false;
+}
+function reEnable(){
+return true;
+}
+document.onselectstart=new Function ("return false");
+if (window.sidebar){
+document.onmousedown=disableselect;
+document.onclick=reEnable;
+}
+NS4x=document.layers;
+if (NS4x) {
+origWidth=innerWidth;
+origHeight=innerHeight;
+}
+function reDo() {
+if (innerWidth !=origWidth || innerHeight !=origHeight)
+location.reload();
+}
+if (NS4x) onresize=reDo;
+manu=navigator.appName;
+vers=navigator.appVersion;
+var NS4=true;
+if (manu.indexOf("Microsoft")>=0)
+{
+NS4=false;
+}
+//***SOUNDPLACE***
+SOUNDON1=0;SOUNDON2=0;
+var browser_check="";
+if(navigator.appName=="Netscape" && parseInt(navigator.appVersion)>=3)
+browser_check="n3_or_better";
+if(navigator.appName.substring(0,9)=="Microsoft")
+browser_check="msie";
+sound=new Array;
+
+function playSound(dest)
+{
+if (browserName=="unknown"){
+alert(decodeIT("\nSorry but this sound scheme is NOT supported by your browser."));
+}
+var file=sound[dest];
+if (browserName!="msie"){
+document.getElementById("Player").innerHTML="<embed src='"+file+"' hidden=true height=1px width=1px autostart=true loop=false>";
+return;
+}
+if(browser_check=="msie")
+{
+var file=sound[dest];
+var doc=parent.framer1.document;
+doc.write('<HTML><HEAD>');
+doc.write('<TITLE></TITLE>');
+doc.write('</HEAD><BODY BGCOLOR="00FFFF">');
+}
+if (browser_check=="n3_or_better"){
+if (dest==1) document.mediaPlayer.SetSource(sound[1]);
+if (dest==2) document.mediaPlayer.SetSource(sound[2]);
+document.mediaPlayer.DoPlay();
+}
+if(browser_check=="msie"){
+doc.write('<bgsound src="' + file + '" loop=1>');
+doc.write('</BODY></HTML>');
+doc.close ();
+}
+}
+HEADLINE="Correct or Incorrect?";
+function makeArray(size){
+this.length=size;
+for (var i=1;i<=size;i++)
+{
+this[i]=0;
+}
+}
+question =  19; 
+var PMatching=1;
+//var QuizSize=question;
+verify = 0;
+ans="A";
+SIZE =  4;
+marker=0;
+runs = 0;
+var showIt=0;
+
+available=new makeArray(SIZE);
+wrong=new makeArray(SIZE);
+availSize=SIZE;
+wrongSize=0;
+var q=20;
+currentElement=SIZE;
+inReplay=false;
+done=true;
+justContinue=false;
+i=1;
+showAnswer=0;
+var FULL=0;
+var HIDE=0;
+var ema=0;
+var object=new Array();
+var FONTT=0;
+var written=0;
+function makeTrue(questionNum) {
+totaltried ++;
+totalcorrect ++;
+written++;
+correctList=correctList+questionNum+"; ";
+if (SOUNDON1==1){
+playSound(1);}
+if (HIDE==0){
+document.MCQuiz2.src='Resources/Images/correct.gif';
+document.MCQuiz2.height="25";
+}
+if (HIDE==1){
+if (writtenAnswer == 0){
+written=1;
+runs = 1;
+written= 1;
+}
+writtenAnswer=0;
+}
+ans="x";
+}
+function makeFalse(questionNum){
+if (crit[questionNum] =='1'){
+Critical = 1;}
+if (hints[questionNum] !="" ){
+hints[questionNum]=(decodeIT(hints[questionNum]));
+showTip(200,200,hints[questionNum]);
+}
+incorrectList=incorrectList+questionNum + " ("+change1+"); ";
+totaltried ++;
+totalincorrect ++;
+written++;
+if (SOUNDON2==1){
+playSound(2);}
+if (HIDE==0){
+document.MCQuiz2.src='Resources/Images/incorrect.gif';
+document.MCQuiz2.height="25";
+}
+if (HIDE==1){
+if (writtenAnswer == 0){
+written=1;
+runs = 1;
+written= 1;
+}
+writtenAnswer=0;
+}
+ans="x";
+}
+function makeNew(questionNum){
+document.MCQuiz2.src='Resources/Images/f.gif';
+document.MCQuiz2.height="30";
+}
+function initAvail()
+{
+if (FULL!=0 && MHT==1){
+return;
+}
+if (SCORM == true){
+ScormStartUp();
+ans="x";
+}
+for (var i=1;i<=SIZE;i++)
+{
+available[i]=i;
+}
+availSize=SIZE;
+wrongSize=0;
+currentElement=SIZE;
+inReplay=false;
+done=false;
+this.bigbox = document.getElementById("bigbox");
+this.bigbox.innerHTML = "";
+initial();
+getWord();
+}
+function initMHT(){
+if (SCORM == true){
+ScormStartUp();
+ans="x";
+}
+for (var i=1;i<=SIZE;i++)
+{
+available[i]=i;
+}
+availSize=SIZE;
+wrongSize=0;
+currentElement=SIZE;
+inReplay=false;
+done=false;
+this.bigbox = document.getElementById("bigbox");
+this.bigbox.innerHTML = "";
+initial();
+getWord();
+}
+function initial(){
+if (navigator.appName=="Netscape") {
+layerStyleRef="layer.";
+layerRef="document.layers";
+styleSwitch="";
+}else{
+layerStyleRef="layer.style.";
+layerRef="document.all";
+styleSwitch=".style";
+}
+}
+function randomise(maximise) {
+var now=new Date();
+var hour=now.getHours();
+var minimise=now.getMinutes();
+var sec=now.getSeconds();
+quiz();
+return ((((hour +1)*(minimise +1)*(sec))%maximise) + 1);
+}
+function WritAnswer(){
+writtenAnswer=1;
+}
+function WritAnswer2(PassQues){
+bg=PassQues;
+if (bg==null || bg=="?"){
+bg = (decodeIT("No answer"));
+}
+runs=0;
+document.getElementById('button1').style.visibility = "hidden"
+checkWord(bg);
+runs =1;
+}
+function ShowRadio(AnswerString)
+{
+var AnsNum = -1;
+var AnsNumResult=-1;
+AnsNum =AnswerString.toLowerCase().indexOf('a)');
+if (AnsNum != -1){
+AnsNumResult=1;
+} 
+AnsNum =AnswerString.toLowerCase().indexOf('b)');
+if (AnsNum != -1){
+AnsNumResult=2;
+}
+AnsNum =AnswerString.toLowerCase().indexOf('c)');
+if (AnsNum != -1){
+AnsNumResult=3;
+}
+AnsNum =AnswerString.toLowerCase().indexOf('d)');
+if (AnsNum != -1){
+AnsNumResult=4;
+}
+AnsNum =AnswerString.toLowerCase().indexOf('e)');
+if (AnsNum != -1){
+AnsNumResult=5;
+}
+AnsNum =AnswerString.toLowerCase().indexOf('f)');
+if (AnsNum != -1){
+AnsNumResult=6;
+}
+AnsNum =AnswerString.toLowerCase().indexOf('g)');
+if (AnsNum != -1){
+AnsNumResult=7;
+}
+document.getElementById('A').style.visibility = 'visible';
+document.getElementById('B').style.visibility = 'visible';
+document.getElementById('C').style.visibility = 'visible';
+document.getElementById('D').style.visibility = 'visible';
+document.getElementById('E').style.visibility = 'visible';
+document.getElementById('F').style.visibility = 'visible';
+document.getElementById('G').style.visibility = 'visible';
+document.getElementById('continue1').style.visibility = 'visible';
+document.getElementById('reload1').style.visibility = 'hidden';
+document.getElementById('calculate1').style.visibility = 'visible';
+document.getElementById('submit1').style.visibility = 'visible';
+document.getElementById('close1').style.visibility = 'visible';
+
+if (AnsNumResult==6){
+document.getElementById('G').style.visibility = "hidden";
+}
+if (AnsNumResult==5){
+document.getElementById('F').style.visibility = "hidden";
+document.getElementById('G').style.visibility = "hidden";
+}
+if (AnsNumResult==4){
+document.getElementById('E').style.visibility = "hidden";
+document.getElementById('F').style.visibility = "hidden";
+document.getElementById('G').style.visibility = "hidden";
+}
+if (AnsNumResult==3){
+document.getElementById('D').style.visibility = "hidden";
+document.getElementById('E').style.visibility = "hidden";
+document.getElementById('F').style.visibility = "hidden";
+document.getElementById('G').style.visibility = "hidden";
+}
+if (AnsNumResult==2){
+document.getElementById('C').style.visibility = "hidden";
+document.getElementById('D').style.visibility = "hidden";
+document.getElementById('E').style.visibility = "hidden";
+document.getElementById('F').style.visibility = "hidden";
+document.getElementById('G').style.visibility = "hidden";
+}
+if (AnsNumResult==1){
+document.getElementById('B').style.visibility = "hidden";
+document.getElementById('C').style.visibility = "hidden";
+document.getElementById('D').style.visibility = "hidden";
+document.getElementById('E').style.visibility = "hidden";
+document.getElementById('F').style.visibility = "hidden";
+document.getElementById('G').style.visibility = "hidden";
+}
+if (AnsNumResult==-1){
+document.getElementById('A').style.visibility = "hidden";
+document.getElementById('B').style.visibility = "hidden";
+document.getElementById('C').style.visibility = "hidden";
+document.getElementById('D').style.visibility = "hidden";
+document.getElementById('E').style.visibility = "hidden";
+document.getElementById('F').style.visibility = "hidden";
+document.getElementById('G').style.visibility = "hidden";
+}
+}
+function uncheckRadio() {
+ var choice1 = document.answerform.choice;
+ for (i = 0; i < choice1.length; i++) {
+  if ( choice1[i].checked = true ) 
+   choice1[i].checked = false; 
+ }
+}
+function getWord(){
+quiz();
+uncheckRadio()
+ans="x";
+document.MCQuiz2.src='Resources/Images/arrow1.gif';
+document.MCQuiz2.height="30";
+window.status="Multiple Choice Quiz Maker";
+if (!inReplay){
+currentElement=randomise(availSize);
+decodeIT(QUESTION[(available[currentElement])]);
+this.bigbox = document.getElementById("bigbox");
+this.bigbox.innerHTML = resultString;
+ShowRadio(resultString);
+document.getElementById("DivMCQuiz").innerHTML=IMAGES[(available[currentElement])];
+if (ANSWER[(available[currentElement])].length > 1 && (ANSWER[(available[currentElement])]).indexOf(' + ') == -1 && (ANSWER[(available[currentElement])]).indexOf('*') == -1){
+document.getElementById('button1').style.visibility = 'visible';
+document.getElementById('continue1').style.visibility = 'visible';
+document.getElementById('reload1').style.visibility = 'hidden';
+document.getElementById('calculate1').style.visibility = 'visible';
+document.getElementById('submit1').style.visibility = 'visible';
+document.getElementById('close1').style.visibility = 'visible';
+writtenAnswer=1;
+WritAnswer();
+}
+}
+else {
+currentElement=randomise(wrongSize);
+this.bigbox = document.getElementById("bigbox");
+this.bigbox.innerHTML =decodeIT(QUESTION[(wrong[currentElement])]);
+ShowRadio(decodeIT(QUESTION[(wrong[currentElement])]));
+document.getElementById("DivMCQuiz").innerHTML=IMAGES[(wrong[currentElement])];
+if (ANSWER[(wrong[currentElement])].length > 1 && (ANSWER[(wrong[currentElement])]).indexOf(' + ') == -1 && (ANSWER[(wrong[currentElement])]).indexOf('*') == -1){
+
+document.getElementById('button1').style.visibility = 'visible';
+document.getElementById('continue1').style.visibility = 'visible';
+document.getElementById('reload1').style.visibility = 'hidden';
+document.getElementById('calculate1').style.visibility = 'visible';
+document.getElementById('submit1').style.visibility = 'visible';
+document.getElementById('close1').style.visibility = 'visible';
+writtenAnswer=1;
+WritAnswer();
+}
+}
+}
+function newCheck(input){
+if (Amber==0){
+setRunsCookie(1);
+warning=true;
+}
+var url = window.location.href;
+var qparts = url.indexOf('?TM');
+if (qparts!=-1){
+warning=false;
+setRunsCookie(0); 
+FULL=0;
+}
+if (input.length  > 1){
+var multiString="";
+if (input.indexOf("1") !=-1){
+multiString = multiString + "a";
+} 
+if (input.indexOf("2") !=-1){
+if (multiString.indexOf("+") == -1 && multiString.length == 0){
+multiString = multiString + "b";
+} 
+else{
+multiString = multiString + "+b";
+}
+}
+if (input.indexOf("3") !=-1){
+if (multiString.indexOf("+") == -1 && multiString.length == 0){
+multiString = multiString + "c";
+} 
+else{
+multiString = multiString + "+c";
+}
+}
+if (input.indexOf("4") !=-1){
+if (multiString.indexOf("+") == -1 && multiString.length == 0){
+multiString = multiString + "d";
+} 
+else{
+multiString = multiString + "+d";
+}
+}
+if (input.indexOf("5") !=-1){
+if (multiString.indexOf("+") == -1 && multiString.length == 0){
+multiString = multiString + "e";
+} 
+else{
+multiString = multiString + "+e";
+}
+}
+if (input.indexOf("6") !=-1){
+if (multiString.indexOf("+") == -1 && multiString.length == 0){
+multiString = multiString + "f";
+} 
+else{
+multiString = multiString + "+f";
+}
+}
+if (input.indexOf("7") !=-1){
+if (multiString.indexOf("+") == -1 && multiString.length == 0){
+multiString = multiString + "g";
+} 
+else{
+multiString = multiString + "+g";
+}
+}
+input=multiString;
+}
+checkAnswer(input);
+}
+function checkAnswer(input){
+if (input == "x" && AllowContinue ==  false){
+alert("Please answer the question!");
+return;
+}
+var showFeedback = document.getElementById("feedbacker"); 
+showFeedback.style.visibility = "hidden";
+//<!--ANCHOR#110-->
+marker=0;
+checkWord(input);
+}
+function checkWord(input){
+if (goExit ==1){
+alert(decodeIT("Sorry, but the time allowed for this quiz has now expired. "));
+return;
+}
+runs=written;
+if (input ==""){
+alert(decodeIT("No answer?"));
+return;
+}
+runs =1;
+written=1;
+change1=input;
+change1 = trimString(change1);
+var q=answ;
+change=change1.toUpperCase();
+input=change;
+change2=decodeIT(ANSWER[(available[currentElement])]);
+change2 = trimString(change2);
+change=change2.toUpperCase();
+ANSWER[(available[currentElement])]=change;
+if (done || marker==1);
+else if (!inReplay)
+{
+var multianswer = ANSWER[(available[currentElement])];
+var tester= trimString(trimString(multianswer)).indexOf(trimString(input));
+if (multianswer.length  > 1 && ANSWER[(available[currentElement])].indexOf(' + ') == -1 ){
+tester=-1;
+}
+var compare =  ANSWER[(available[currentElement])];
+if (ANSWER[(available[currentElement])].indexOf("*") != -1){
+compare =  ANSWER[(available[currentElement])].replace("*","");
+}
+if (input==compare || tester != -1)
+{
+if (SCORM == true){
+SetScormScore(input,ANSWER[(available[currentElement])],available[currentElement]);
+} 
+makeTrue(available[currentElement]);
+document.getElementById('button1').style.visibility = "hidden";
+window.status="Multiple Choice Quiz Maker";
+}
+else
+{
+wrong[wrongSize + 1]=available[currentElement];
+wrongSize++;
+if (SCORM == true){
+SetScormScore(input,ANSWER[(available[currentElement])],available[currentElement]);
+}
+makeFalse(available[currentElement]);
+if (showAnswer==0){
+var correctAns = decodeIT(ANSWER[(available[currentElement])]);
+if (correctAns.indexOf("*") !=-1){
+correctAns = correctAns.replace("*","");
+}
+temp=window.confirm(decodeIT(quizStatus1) + ": " + correctAns);
+var showFeedback = document.getElementById("feedbacker"); 
+showFeedback.style.visibility = "hidden";
+}
+document.getElementById('button1').style.visibility = "hidden";
+window.status="Multiple Choice Quiz Maker";
+}
+for (var i=currentElement;i<availSize;i++)
+available[i]=available[i+1];
+availSize--;
+}
+else if (inReplay && justContinue);
+else
+{
+var multianswer = ANSWER[(wrong[currentElement])];
+var tester= trimString(trimString(multianswer)).indexOf(trimString(input));
+if (multianswer.length  > 1 && ANSWER[(wrong[currentElement])].indexOf(' + ') == -1 ){
+tester=-1;
+}
+var compare =  ANSWER[(wrong[currentElement])];
+if (ANSWER[(wrong[currentElement])].indexOf("*") != -1){
+compare =  ANSWER[(wrong[currentElement])].replace("*","");
+}
+if (input==compare || tester != -1)
+{
+if (SCORM == true){
+SetScormScore(input,ANSWER[(wrong[currentElement])],available[currentElement]);
+}
+makeTrue(available[currentElement]);
+document.getElementById('button1').style.visibility = "hidden";
+window.status="Multiple Choice Quiz Maker";
+}
+else
+if (input !=ANSWER[(wrong[currentElement])]){
+if (showAnswer==0){
+document.MCQuiz2.src='Resources/Images/incorrect.gif';
+document.MCQuiz2.height="25";
+if (hints[wrong[currentElement]] !="" ){
+hints[wrong[currentElement]]=(decodeIT(hints[wrong[currentElement]]));
+showTip(200,200,hints[wrong[currentElement]]);
+}
+var correctAns = decodeIT(ANSWER[(wrong[currentElement])]);
+if (correctAns.indexOf("*") !=-1){
+correctAns = correctAns.replace("*","");
+}
+temp=window.confirm(decodeIT(quizStatus1) + ": " + correctAns);
+//temp=window.confirm(decodeIT(quizStatus1) +": "+decodeIT(ANSWER[(wrong[currentElement])]));
+var showFeedback = document.getElementById("feedbacker"); 
+showFeedback.style.visibility = "hidden";
+}
+document.getElementById('button1').style.visibility = "hidden";
+window.status="Multiple Choice Quiz Maker";
+}
+for (var i=currentElement;i<wrongSize;i++)
+wrong[i]=wrong[i+1];
+wrongSize--;
+}
+if (marker==0){
+var tim = 1000;
+if (HIDE==1){
+tim=0
+}
+timeout = setTimeout("moreQuiz()", tim);
+}
+marker=1;
+}
+function moreQuiz(){
+writtenAnswer=0;
+if (answ==0){ location.reload(); } else{
+marker=0;
+makeNew(1);
+if (done)
+alert(decodeIT("End of the quiz "));
+else if (availSize==0 && wrongSize==0)
+{
+alert(decodeIT("End of the quiz "));
+done=true;
+}
+else if (availSize==0 && wrongSize !=0 && (!inReplay))
+{
+inReplay=true;
+alert(decodeIT("You have finished the quiz. Click 'Continue' to repeat the questions that you answered incorrectly. "));
+written=1;
+runs = 1;
+ans="y";
+justContinue=true;
+}
+else {
+justContinue=false;
+getWord();
+}
+}
+}
+function clearAnswer()
+{
+}
+function Quit()
+{
+if (Amber==0){
+setRunsCookie(0);
+warning=false;
+}
+location.reload();
+}
+function changeStat(){
+window.status="revision";
+}
+
+var plonk="</" +"script>";
+var jbegin="<" +"script type='text/javascript'>";
+var invert='"';
+var bingo="";
+var address ="myaddress@myserver.com";
+
+var quizname="Multiple Choice Results for:";
+var quiztitle ="ADVOCATESHIP MODEL TEST";
+var totaltried=0;
+var totalcorrect=0;
+var totalincorrect=0;
+incorrectAnswer="";
+incorrectList ="";
+correctList="";
+var reportWord="";
+var popup="null";
+function wclose(){warning=false;location.replace('about:blank');return;}
+function showScorm(correctList, incorrectList, totalcorrect,totaltried, totalincorrect, quiztitle, tries, SIZE, address){
+if (totalcorrect==0 && totalincorrect==0){
+alert("No results to show at the moment!");
+return;
+}
+if(tries=="0"){
+tries="Not recorded";
+}
+ema=1;
+per=(totaltried-totalincorrect)/question*100;
+per=Math.round(per)+"%";
+var squiztitle = quiztitle;
+while (squiztitle.indexOf("'") > -1)
+ squiztitle = squiztitle.replace("'","`");
+var sIncorrect = incorrectList;
+while (sIncorrect.indexOf("'") > -1)
+ sIncorrect = sIncorrect.replace("'","`");
+var sCorrect = correctList;
+while (sCorrect.indexOf("'") > -1)
+ sCorrect = sCorrect.replace("'","`");
+if (totaltried==0){
+per="0%";
+}
+ShowScore(correctList, incorrectList, totalcorrect,totaltried, totalincorrect,question, quiztitle, tries);
+calculate();
+}
+function hideScorm(){
+var noInput = "";
+	var debugText = document.getElementById("debugText");
+	if(debugText){
+	debugText.innerHTML = noInput;
+}
+}
+function AlertCC(n,correctList, incorrectList, totalcorrect,totaltried, totalincorrect, quiztitle, tries, SIZE, address)
+{
+temp=true;
+if (temp==false){
+return;
+}
+var myname=n;
+if (myname==null){
+return;
+}
+if(tries=="0"){
+tries="Not recorded";
+}
+ema=1;
+if (myname==null || myname==""){
+myname="Unknown User";
+}
+var address="myaddress@myserver.com";
+
+var quiztaker=myname;
+var submitString= "'mailto:"+address+"?subject=Advocateship Model Test Results from "+quiztaker+" &amp;NAME=supporter &amp;METHOD=POST &amp;ENCTYPE=text/plain'>";
+var re = / /g; 
+submitString= submitString.replace(re,"%20");
+myname=quizname+" " +myname;
+per=(totaltried-totalincorrect)/question*100;
+per=Math.round(per)+"%";
+var squiztaker = quiztaker;
+while (squiztaker.indexOf("'") > -1)
+ squiztaker = squiztaker.replace("'","`");
+var squiztitle = quiztitle;
+while (squiztitle.indexOf("'") > -1)
+ squiztitle = squiztitle.replace("'","`");
+var sIncorrect = incorrectList;
+while (sIncorrect.indexOf("'") > -1)
+ sIncorrect = sIncorrect.replace("'","`");
+var sCorrect = correctList;
+while (sCorrect.indexOf("'") > -1)
+ sCorrect = sCorrect.replace("'","`");
+if (totaltried==0){
+per="0%";
+}
+if (Amber==0){
+setRunsCookie(0);
+warning=false;
+}
+var m1="<!DOCTYPE html PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'><html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'><TITLE>Results</TITLE>" +
+jbegin +
+"function disableselect(e){"+
+"return false;"+
+"} "+
+"function reEnable(){"+
+"return true;"+
+"} "+
+"document.onselectstart=new Function ('return false');"+
+"if (window.sidebar){"+
+"document.onmousedown=disableselect;"+
+"document.onclick=reEnable;"+
+"} "+
+plonk+
+"</head>";
+var m2="<BODY BGCOLOR='#FFFFFF'>";
+var m7="<div align='center'>"+
+"<form action='...'>"+
+"<input type='button' value='Send Message'onClick="+commas+"parent.location='mailto:"+address+"?subject=Advocateship Model Test Results&amp;body=Title of Quiz: "+ escape(squiztitle) +"%0AQuestions answered by: " + escape(squiztaker)+"%0AQuestion(s) available: "+question+"%0ATotal number of questions answered:  "+totaltried+"%0ACorrect answer(s)"+totalcorrect+"%0A Incorrect answer(s)"+totalincorrect+"%0AGrade as percentage: "+per+"%0A%0AList of question(s) with incorrect answers. The incorrect choice is in brackets:%0A"+sIncorrect+"%0A%0AList of question(s) with correct answers:%0A"+sCorrect+"%0A'"+commas+">"+
+"</form action='...'>"+
+"</div>";
+var m3="<h1><B>Advocateship Model Test Results</B></h1>" +
+"<BR><CENTER>"+
+"<FORM action=" + submitString +"These are the results which will be sent if you click the 'Send Message' button:<p>"+'\n'+
+"<TEXTAREA NAME=Message COLS=80 ROWS=20 readonly>"+
+"Title of Quiz: "+quiztitle+ '\n'+
+"Quiz type: Multiple Choice"+'\n'+
+"The results will be submitted to: " + address  +'\n'+
+"Questions answered by: "+quiztaker+'\n'+
+"Number of quiz attempts: "+tries+'\n'+
+"Total number of questions available: "+ question +'\n'+
+"Total number of questions answered: "+totaltried +'\n'+
+"Total number of correct answers: " + totalcorrect +'\n'+
+"Total number of inccorrect answers: " + totalincorrect + '\n'+
+"Grade as percentage: "+per+'\n' +
+"List of question(s) with incorrect answers. The incorrect choice is in brackets:"+'\n'+
+incorrectList+'\n'+
+"List of question(s) with correct answers:" +'\n'+
+correctList+'\n';
+var m4="</textarea><BR><BR>"+
+"<input type=button VALUE=' Print this Page '" +
+" onClick='printit()'>"+
+"      "+
+"<input type='button' value=' Close Window'" +
+" onClick='wclosing()'><P>"+
+ jbegin+
+"var message='';" +
+"function clickIE()" +
+"{if (document.all)" +
+"{(message);return false;}}" +
+"function clickNS(e) {" +
+"if" +
+"(document.layers||(document.getElementById&&!document.all))" +
+"{"+
+"if (e.which==2||e.which==3) {(message);return false;}}}" +
+"if (document.layers)" +
+"{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}" +
+"else" +
+"{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}" +
+"document.oncontextmenu=new Function('return false');"+
+"var FULLER=" +FULL+";"+
+"var goLocal3=" + goLoca1+";"+'\n'+
+"var goLocal4='"+goLoca2+"';"+'\n'+
+"var goLoca3 = 'about:blank';" +
+"var reLocate=0;" +
+"var browserName = 'unknown';" + 
+"var ua = navigator.userAgent.toLowerCase();" + 
+"if ( ua.indexOf('firefox') != -1 ) { " +
+"browserName = 'firefox';}" +
+"if ( ua.indexOf('chrome') != -1 ) { " +
+"browserName = 'chrome';}" +
+"if ( ua.indexOf('safari') != -1 ) { " +
+"browserName = 'safari';}" +
+"if ( ua.indexOf('opera') != -1 ) { " +
+"browserName = 'opera';}" +
+"if ( ua.indexOf('msie') != -1 ) { " +
+"browserName = 'msie';}" +
+"function wclosing(){" +
+"if (browserName =='msie' && reLocate == 0){window.parent.close();return;}" +
+"if (browserName =='unknown' && reLocate == 0){location.replace(goLoca3);return;}" +
+"location.replace(goLoca3);" +
+"if (reLocate==0){" +
+"window.document.write('');" +
+"self.close();return;}}" + 
+"function printit(){"+
+"var NS = (navigator.appName == 'Netscape');"+
+"var VERSION = parseInt(navigator.appVersion);"+
+"if (NS) {" +
+"window.print();" +
+"} else {" +
+"window.location.reload();"+
+"window.print();" +
+"} "+
+"} "+
+plonk +
+"</FORM></CENTER>"; window.document.write(m1+m2+m3+m4+m7+'</body></html>');
+
+}
+if (location.href.indexOf('?TM') != -1){FULL=0;} 
+function doit(){return;}
+function TTM()
+{
+var mop = 0;
+mop = history.length;
+if (mop == 0 || mop == 1){
+alert(decodeIT("The Task Manager is not running. You must start the Task manager before you load the first quiz!"));
+}
+history.back();
+}
+function right(e) {
+var hoopla =  window.event; 
+getMouse(e);
+if (navigator.appName=='Netscape'  &&
+(e.which==3 || e.which==2))
+return false;
+else if (navigator.appName=='Microsoft Internet Explorer' && (event.button==2 || event.button==3)) {
+alert(decodeIT("Sorry, but this option is not available in this quiz!"));
+return false;
+}
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+function onKeyDown() { if (FULL==1){
+if ( (event.altKey) || ((event.keyCode==8) &&
+(event.srcElement.type !="text" &&
+event.srcElement.type !="textarea" &&
+event.srcElement.type !="password")) ||
+((event.ctrlKey) && ((event.keyCode==78) || (event.keyCode==82)) ) ||
+(event.keyCode==116) ) {
+event.keyCode=0;
+event.returnValue=false;
+if (window.opener !=null && FULL==1 && !NS4) {
+window.opener.blur();
+msgWindow.focus();
+}
+}
+}
+}
+SIZE= 19;
+QUESTION=new makeArray(SIZE);
+ANSWER=new makeArray(SIZE);
+IMAGES=new makeArray(SIZE);
+var hints=new Array;
+var crit=new Array;
+crit[1] ="0";crit[2] ="0";crit[3] ="0";crit[4] ="0";crit[5] ="0";crit[6] ="0";crit[7] ="0";crit[8] ="0";crit[9] ="0";crit[10] ="0";crit[11] ="0";crit[12] ="0";crit[13] ="0";crit[14] ="0";crit[15] ="0";crit[16] ="0";crit[17] ="0";crit[18] ="0";crit[19] ="0";hints[1] ="";hints[2] ="";hints[3] ="";hints[4] ="";hints[5] ="";hints[6] ="";hints[7] ="";hints[8] ="";hints[9] ="";hints[10] ="";hints[11] ="";hints[12] ="";hints[13] ="";hints[14] ="";hints[15] ="";hints[16] ="";hints[17] ="";hints[18] ="";hints[19] ="";
+IMAGES[ 1]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 1]="কখন আরজি সংশোধনের আবেদন করা যায় ?<br><br> A)  আরজিতে ভুল থাকলে<br> B)  আরজিতে ভুল না থাকলে<br> C)  আরজি সঠিক থাকলে<br> D)  কোনটিই নয়";ANSWER[ 1]="A";IMAGES[ 2]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 2]="দলিল বাতিল সম্পর্কে কত ধারায় বলা হয়েছে ?<br><br> A)  ১২ ধারা<br> B)  ৮ ধারা<br> C)  ৪২ ধারা<br> D)  ৩৯ ধারা";ANSWER[ 2]="D";IMAGES[ 3]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 3]="অতিরিক্ত জেলা জজের আপীল এখতিয়ার কত টাকা পর্যন্ত ?<br><br> A)  ৩ লক্ষ টাকা<br> B)  ১০ লক্ষ টাকা<br> C)  ৫ লক্ষ টাকা<br> D)  কোনটিই নয়";ANSWER[ 3]="C";IMAGES[ 4]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 4]="দণ্ডবিধি কোন ধরণের আইন?<br><br> A)  বিশেষ আইন<br> B)  কোনটিই নয়<br> C)  পদ্ধতিগত আইন<br> D)  প্রথাগত আইন";ANSWER[ 4]="B";IMAGES[ 5]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 5]="অস্থায়ী নিষেধাজ্ঞা কখন মঞ্জুর করা হয় ?<br><br> A)  ডিক্রির পূর্বে<br> B)  ক ও খ<br> C)  কোনটিই নয়<br> D)  যে কোন  পর্যায়ে";ANSWER[ 5]="D";IMAGES[ 6]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 6]="কোন ডিক্রির বিরুদ্ধে আপীল করা যায় না ?<br><br> A)  একতরফা ডিক্রি<br> B)  দোতরফা ডিক্রি<br> C)  সোলে ডিক্রি<br> D)  সকল ডিক্রি";ANSWER[ 6]="C";IMAGES[ 7]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 7]="সুনির্দিষ্ট প্রতিকার আইন অনুযায়ী কোন ধরণের প্রতিকার দেওয়া যায় না ?<br><br> A)  নিষেধাজ্ঞা<br> B)  দন্ড<br> C)  স্বত্ব ঘোষণা<br> D)  চুক্তি বাস্তবায়ন";ANSWER[ 7]="B";IMAGES[ 8]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 8]="ফৌজদারী কার্যবিধিতে অব্যাহতি কখন দেওয়া হয়?<br><br> A)  বিচার শুরু করার পূর্বে আসামীকে মুক্তি দেয়া<br> B)  সাক্ষ্য প্রমাণের অভাবে বিচারের পর মুক্তি দেয়া<br> C)  কোনটিই নয়<br> D)  বিচারে পূর্বে বা পরে যেকোনো সময় মুক্তি দেয়া";ANSWER[ 8]="A";IMAGES[ 9]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 9]="স্ত্রীলোকের দেহ তল্লাশী কে করতে পারে?<br><br> A)  যে কোন পুলিশ অফিসার<br> B)  শালীনতা বজায় রেখে কোন মহিলা দ্বারা<br> C)  যে কোন ম্যাজিস্ট্রেট<br> D)  যে কোন উকিল";ANSWER[ 9]="B";IMAGES[ 10]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 10]="ঘটনা (fact) এর সংজ্ঞা সাক্ষ্য আইনের কত ধারায়?<br><br> A)  ৭ ধারায়<br> B)  ৩ ধারায়<br> C)  ৪ ধারায়<br> D)  ৬ ধারায়";ANSWER[ 10]="B";IMAGES[ 11]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 11]="১ম শ্রেণীর জুডিসিয়াল ম্যাজিস্ট্রেটের শাস্তি প্রদানের ক্ষমতা কি?<br><br> A)  ৮ বছর কারাদন্ড এবং ৪ হাজার টাকা জরিমানা<br> B)  ৯ বছর কারাদন্ড এবং ৭ হাজার টাকা জরিমানা<br> C)  ৫ বছর কারাদন্ড এবং ১০ হাজার টাকা জরিমানা<br> D)  ৫ বছর কারাদন্ড এবং ৫ হাজার টাকা জরিমানা";ANSWER[ 11]="C";IMAGES[ 12]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 12]="ভয় ভীতিতে স্বীকারোক্তি করলে তাহা গ্রহণ যোগ্য নয়। কত ধারা মতে?<br><br> A)  ২৬<br> B)  ২৪<br> C)  ২৫<br> D)  ২৭";ANSWER[ 12]="B";IMAGES[ 13]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 13]="দোষ স্বীকারোক্তি কোন ধরণের মামলার ক্ষেত্রে প্রযোজ্য?<br><br> A)  দেওয়ানী মামলায়<br> B)  জৌজদারী মামলায়<br> C)  ক ও খ<br> D)  উপরের কোনটিই নয়";ANSWER[ 13]="B";IMAGES[ 14]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 14]="হুলিয়া জারির বিধান কোথায় বলা আছে?<br><br> A)  ফৌজদারী কার্যবিধির ৯০<br> B)  ফৌজদারী কার্যবিধির ৮৯ ধারায়<br> C)  ফৌজদারী কার্যবিধির ৯১ ধারায়<br> D)  ফৌজদারী কার্যবিধির ৮৭ ধারায়";ANSWER[ 14]="D";IMAGES[ 15]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 15]="ফৌজদারী কার্যবিধির কত ধারার অধীনে গ্রেফতারের সংজ্ঞা দেওয়া আছে?<br><br> A)  ৪৭<br> B)  ৪৬(২)<br> C)  ৪৬(১)<br> D)  ৪৫(২)";ANSWER[ 15]="C";IMAGES[ 16]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 16]="সুনির্দিষ্টপ্রতিকার আইন অনুযায়ী প্রতিকার কত ধরণের ?<br><br> A)  ২ ধরণের<br> B)  ৩ ধরণের<br> C)  ৫ ধরণের<br> D)  ৪ ধরণের";ANSWER[ 16]="C";IMAGES[ 17]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 17]="ফৌজদারী কার্যবিধি অনুসারে বিচারিক ম্যাজিস্ট্রেটগণকে কতটি শ্রেণীতে বিভক্ত করা যায় ?<br><br> A)  দুই<br> B)  তিন<br> C)  চার<br> D)  এক";ANSWER[ 17]="C";IMAGES[ 18]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 18]="নিচের কোন দন্ডটি হাইকোর্ট ডিভিশনের অনুমোদন ব্যতীত কার্যকর হতে পারে না?<br><br> A)  মৃত্যুদন্ড<br> B)  যাবজ্জীবন কারাদন্ড<br> C)  দশ বছেরের অধিক মেয়াদের কারাদন্ড<br> D)  সবকটি";ANSWER[ 18]="A";IMAGES[ 19]="<img src = 'Resources/Images/f.gif' height= 0 width= 0 > ";QUESTION[ 19]="ম্যাজিস্ট্রেট জামিন না দিলে দায়রা আদালতে কি ধরণের আবেদন দিয়ে জামিন চাওয়া যায়?<br><br> A)  ফৌজদারি মিস মামলা<br> B)  ফৌজদারি আপীল<br> C)  ফৌজদারি রিভিশন<br> D)  ক ও খ";ANSWER[ 19]="A";
+function checkIt(verify){
+if (Amber==0){
+setRunsCookie(1);
+warning=true;
+}
+var url = window.location.href;
+var qparts = url.indexOf('?TM');
+if (qparts!=-1){
+warning=false;
+setRunsCookie(0); 
+FULL=0;
+}
+if (!inReplay){
+var mans=decodeIT(ANSWER[(available[currentElement])]);
+}
+else{
+var mans=decodeIT(ANSWER[(wrong[currentElement])]);
+}
+var manswers= mans.indexOf("*"); 
+if (manswers==0){
+ans=ans.replace("x","");
+if (ans.indexOf(verify) ==-1){
+ans= ans+verify;}
+else{
+ans= ans.replace(verify,"");
+}
+return;
+}
+try{
+for (var imp = 0; imp <question+1 ;imp++){
+var f = document.forms[imp];
+for(i=0; i<f.elements.length; i++) {
+if(f[i].type == "checkbox") {
+f[i].checked = false;
+f[verify-1].checked = true;
+}
+}
+}
+}
+catch(err){
+}
+if (verify ==0){
+ans="A";
+}
+if (verify ==1){
+ans="A";
+}
+if (verify ==2){
+ans="B";
+}
+if (verify ==3){
+ans="C";
+}
+if (verify ==4){
+ans="D";
+}
+if (verify ==5){
+ans="E";
+}
+if (verify ==6){
+ans="F";
+}
+if (verify ==7){
+ans="G";
+}
+}
+function calculate(){
+var per
+if (PassCent != 0){
+per=(totaltried-totalincorrect)/question*100;
+per=Math.round(per)
+if (per < PassCent){
+alert("I'm sorry, but you have not passed the test!");
+return;
+}
+if (Critical != 0){
+alert("I'm sorry, but you have not passed the test!");
+return;
+}
+per=Math.round(per)+"%";
+alert("Your percentage correct is: "+ per + ".  You have passed your test!");
+return;
+}
+per=(totaltried-totalincorrect)/SIZE*100;
+per=Math.round(per)+"%";
+if (totaltried==0){
+per="0%";
+}
+var displayIt = decodeIT("Total number of questions available")+": " + SIZE +'\n'+
+decodeIT("Total number of questions answered")+": " + totaltried +'\n'+
+decodeIT("Total number of correct answers")+ ": " + totalcorrect +'\n'+
+decodeIT("Total number of incorrect answers")+ ": " + totalincorrect + '\n'+
+decodeIT("Grade as percentage") + ": "+per;
+alert(displayIt)
+}
+function firstCheck(){
+}
+// -->
+</script>
+<style type="text/css">
+#tt_ovrl { 
+background-color: black; 
+-moz-opacity: 0.7; opacity: 0.7;
+top: 0; left: 0; position: fixed;
+width: 100%; height:100%; z-index: 99; 
+}
+#tt_ww { position: fixed; z-index: 100; top: 0; left: 0; width: 100%; height: 100%; text-align: center;} 
+#tt_win { margin: 20% auto 0 auto; width: 400px; text-align: left;}
+#tt_w {background-color: white; padding: 3px; border: 1px solid black; background-color: #EEE;}
+#tt_t {color: white; margin: 0 0 2px 3px; font-family: Arial, sans-serif; font-size: 10pt;}
+#tt_text {width: 100%;}
+#tt_w span {font-family: Arial, sans-serif; font-size: 10pt;}
+#tt_w div {text-align: right; margin-top: 5px;}
+</style>
+<!-- IE specific code: -->
+<!--[if lte IE 7]>
+<style type="text/css">
+#tt_ovrl {
+position: absolute;
+filter:alpha(opacity=70);
+top: expression(eval(document.body.scrollTop));
+width: expression(eval(document.body.clientWidth));
+}
+#tt_ww { 
+position: absolute; 
+top: expression(eval(document.body.scrollTop)); 
+}
+</style>
+<![endif]-->
+<script type="text/javascript">
+<!--
+var PassAns="";
+var PassQues="";
+var PassQuiz="";
+var RCount=0;
+function get_cookie (Name) {
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+// if cookie exists
+if (offset != -1) { 
+offset += search.length
+// set index of beginning of value
+end = document.cookie.indexOf(";", offset);
+// set index of end of cookie value
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+function setRunsCookie(what){
+document.cookie=checkup+"="+what
+}
+function hw1(PassQues1,PassAns1,PassQuiz1)
+{
+if (passed==1 || runner==1){
+return;
+}
+PassAns=PassAns1;
+PassQues=PassQues1;
+PassQuiz=PassQuiz1;
+get_cookie(checkup);
+if (get_cookie(checkup)=="" & RCount==0){
+RCount=1;
+setRunsCookie(0);
+tries=0;
+}
+if (get_cookie(checkup)!="" & RCount==0){
+RCount=1;
+var prevRuns = get_cookie(checkup);
+var newRuns = parseInt(prevRuns);
+newRuns = newRuns+1;
+setRunsCookie(newRuns);
+tries=newRuns;
+}
+if (tries > Amber || tries==Amber){
+runner=0;
+}
+if (tries < Amber){
+runner=1;
+return;
+}
+if (passed==1 || runner==1){
+return;
+}
+document.onselectstart=new Function ("return true");
+    tt_prompt( hw2, 'A password is necessary to continue', '');
+}
+function hw2(n)
+{
+if (n==null){
+document.onselectstart=new Function ("return false");
+return;}
+document.onselectstart=new Function ("return false");
+ Count(n);
+}
+function hw3(PassQuiz1)
+{
+PassQuiz=PassQuiz1;
+document.onselectstart=new Function ("return true");
+    tt_prompt( hw4, 'Please tell us your name ...', '');
+}
+function hw4(n)
+{
+if (n==null){
+document.onselectstart=new Function ("return false");
+return;}
+document.onselectstart=new Function ("return false");
+if (PassQuiz=="MC"){
+AlertCC(n,correctList, incorrectList, totalcorrect,totaltried, totalincorrect,question, quiztitle, tries);
+}
+if (PassQuiz=="SQ"){
+AlertCC(n,correctList, incorrectList, totalcorrect,totaltried, totalincorrect, quiztitle, tries, SIZE, address);
+}
+}
+function hw5(PassQues1)
+{
+PassQues=PassQues1;
+document.onselectstart=new Function ("return true");
+    tt_prompt( hw6, 'What is your answer?', '');
+}
+function hw6(n,question)
+{
+if (n==null){
+document.onselectstart=new Function ("return false");
+return;}
+document.onselectstart=new Function ("return false");
+PassQuiz="x";
+Engine2(PassQues,n);
+}
+function hw17()
+{
+document.onselectstart=new Function ("return true");
+    tt_prompt( hw8, 'Please tell us your name ...', '');
+}
+function hw18(n)
+{
+if (n==null){
+document.onselectstart=new Function ("return false");
+return;}
+document.onselectstart=new Function ("return false");
+PassAns=n;
+AlertCC(n,correctList, incorrectList, totalcorrect,totaltried, totalincorrect,question, quiztitle, tries);
+}
+function hw7()
+{
+document.onselectstart=new Function ("return true");
+    tt_prompt( hw8, 'What colour would you like? Simply type in the name of the colour ... red, blue, yellow, pink etc.', '');
+}
+function hw8(n)
+{
+if (n==null){
+document.onselectstart=new Function ("return false");
+return;}
+document.onselectstart=new Function ("return false");
+Mycolor(n);
+}
+function hw13(PA1)
+{
+PassQuiz=PA1;
+document.onselectstart=new Function ("return true");
+    tt_prompt( hw14, 'Please tell us the name of player 1', '');
+}
+function hw14(n)
+{
+if (n==null){
+document.onselectstart=new Function ("return false");
+return;}
+document.onselectstart=new Function ("return false");
+PassQues=n;
+hw15();
+}
+function hw15()
+{
+document.onselectstart=new Function ("return true");
+    tt_prompt( hw16, 'Please tell us the name of player 2', '');
+}
+function hw16(n)
+{
+if (n==null){
+document.onselectstart=new Function ("return false");
+return;}
+document.onselectstart=new Function ("return false");
+if (PassQuiz=="PT"){
+AlertCC(PassQues,n,fortune1, fortune2, correctList, incorrectList, totalcorrect1,totaltried1, totalincorrect1, totalcorrect2, totaltried2, totalincorrect2, quiztitle, tries, SIZE, address)
+}
+}
+function hw25(PassQues1)
+{
+PassQues=PassQues1;
+document.onselectstart=new Function ("return true");
+    tt_prompt( hw26, 'What is your answer?', '');
+}
+function hw26(n,question)
+{
+if (n==null){
+document.onselectstart=new Function ("return false");
+return;}
+document.onselectstart=new Function ("return false");
+PassQuiz="x";
+WritAnswer2(n);
+}
+
+var tt_cb = null;
+function tt$(a) { return document.getElementById(a); } 
+function tt_prompt(cb, q, a) {
+tt_cb = cb;
+tt$('tt_t').innerHTML = '' + '';
+tt$('tt_prompt').innerHTML = q;
+tt$('tt_text').value = a; 
+tt$('tt_ovrl').style.display = tt$('tt_ww').style.display = ''; 
+tt$('tt_text').focus(); 
+tt$('tt_text').select(); 
+}
+function tt_clk(m) { 
+tt$('tt_ovrl').style.display = tt$('tt_ww').style.display = 'none'; 
+if (!m) tt_cb(null); else tt_cb(tt$('tt_text').value);
+}
+cs="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+Indigo=0;
+Red="";
+Yellow="babababdbbaabadabbab";
+ls1="";ls2="";ls3="";bye = 0;four="00 01 10 11 ";fourletter="a  b  c  d ";
+var passed=0;
+var runner=0;
+var DaysToLive=1;
+function PW(info){
+if (
+passed==1){
+return;}
+var pw=info;
+if (pw==null)
+{
+bye=1;return;
+}
+for (var i=0;i<pw.length;i++)
+{
+chm=pw.charAt(i);
+cmm=cs.indexOf(chm)+32;
+for (var j=7;j>-1;j--)
+{
+cx=Math.pow(2,j);
+if (cmm >= cx )
+{
+cmm=cmm-cx;ls1+="1";
+}
+else{
+ls1+="0";
+}
+}
+}
+for(var i=0;i<ls1.length;i=i+2)
+{
+ls2=ls1.substring(i,i+2);y=four.indexOf(ls2);ls3+=fourletter.charAt(y);}if(ls3 != Red&& ls3!= Yellow ){bye=1;ls1="";ls2="";ls3="";alert("Sorry but the password is incorrect");PW();return;}
+if (ls3==Yellow){
+WWHCount=0;
+Indigo=1;
+tries=0;
+}
+setRunsCookie(0);
+passed=1;
+bye=0;
+if (PassQuiz=="MC"){
+Engine(PassQues,PassAns);
+}
+if (PassQuiz=="SQ"){
+checkAnswer(PassAns);
+}
+if (PassQuiz=="SQ1"){
+WritAnswer2(PassAns);
+}
+if (PassQuiz=="RT"){
+answerIt(PassQues,PassAns);
+}
+if (PassQuiz=="PT"){
+checkAnswer(PassQues);
+}
+}
+function Bye(){return;temp=window.confirm("Are you sure?");
+if(temp==true){location.replace("about:blank");
+StopIt=0;
+return(0);}
+if(temp==false){
+location.reload();
+StopIt=0;
+}}
+function cheers(){PW();if (bye==1){Bye();}}
+var Amber= 0;
+//**expDays
+var expDays = 1;
+var myexp = new Date();
+//**Green
+var checkup='MCQM1391';
+myexp.setTime(myexp.getTime() + (expDays*24*60*60*1000));
+function Count(info){
+if (passed==1 || runner==1){
+passed=1;
+return;
+}
+PW(info);
+return;
+}
+// -->
+</SCRIPT>
+</head>
+
+<body bgcolor="#FFFFD2" text="black" link="#003333" alink="#ffff00" vlink="#336633" onKeyDown=" onKeyDown();" onLoad="initAvail();">
+<CENTER>
+<NOSCRIPT>
+<b>
+This page requires a JavaScript-enabled browser
+</b>
+<BR>
+Instructions on how to enable your browser are contained in the help file.
+<BR>
+</NOSCRIPT></CENTER>
+<!--<div id="debugConsole">
+<h1>QUIZ RESULTS CONSOLE</h1>
+<p id="debugText"></p>
+</div>-->
+<!-- tt_prompt HTML code -->
+<div id="tt_ovrl" style="display: none;">&nbsp;</div>
+<div id="tt_ww" style="display: none;">
+<div id="tt_win"><div id="tt_t"></div>
+<div id="tt_w"><span id="tt_prompt"></span>
+<br /><input type="text" id="tt_text" onKeyPress=
+"if((event.keyCode==10)||(event.keyCode==13)) tt_clk(1); if (event.keyCode==27) tt_clk(0);">
+<br><div><input type="button" id="tt_ok" onclick="tt_clk(1);" value="OK">
+<input type="button" id="tt_cancel" onclick="tt_clk(0);" value="Cancel">
+</div></div>
+</div>
+</div>
+
+<center>
+<font size="4" face="Helvetica">
+<B>
+<SPAN style="background-color: #000000">
+<script type="text/javascript">
+<!---
+code=
+
+document.write(unescape(code));
+//--->
+ </script>
+    </span></b></font></p>
+ <p><font face="Helvetica" size="4"><b><span style="background-color: #000000"><font color="#FF80FF">C</font>
+   <font color="#FF0000">R</font>
+   <font color="#FFFF80">E</font>
+   <font color="#FFFF00">A</font>
+   <font color="#80FF00">T</font>
+   <font color="#00FF40">E</font>
+   <font color="#80FF80">D</font>
+   <font color="#FF8080"> </font>
+   <font color="#FF00FF">B</font>
+   <font color="#FFFF00">Y</font>
+   <font color="#8080FF"> </font>
+   <font color="#00FF80"> </font>
+   <font color="#00FFFF">M</font>
+   <font color="#00F66">I</font>
+   <font color="#00F66">A</font>
+   <font color="#FF8040">Z</font>
+   <font color="#FF8040">I</font>
+   
+   
+   <script>FONTT = 1;</script>
+ </span> </b> <font size="1"> <br> <br>
+ </font></font> </p>
+<hr> </center><center><br>
+<H2>ADVOCATESHIP MODEL TEST 1</H2><HR></center>
+<script type="text/javascript">
+<!---
+if (MHT==1){
+setTimeout('StatusQuo()',1000);
+}
+if (location.href.indexOf('?') == -1 && MHT !== 1){
+setTimeout('StatusQuo()',1000);
+var swider = document.body.offsetWidth;
+var shgter = document.body.offsetHeight;
+if (swider !=  screen.width && shgter != screen.height)
+{
+if ( FULL !== 0){
+window.resizeTo(screen.width, screen.height);
+window.moveTo(0, 0);
+}
+}
+if (swider < screen.width && FULL==1){
+//window.blur();
+}
+}
+else{
+window.focus();
+if (window.width > window.document.offsetWidth){
+window.blur();
+} 
+}
+var answ=FONTT;
+//--->
+</script>
+<!--<FONT SIZE=1>
+Teaching Templates Copyright (C) 2006 - 2009 by
+<a href="http://www.tac-soft.com">
+Tac-Software. All Rights Reserved
+</a>
+</FONT>
+-->
+<CENTER><div id=DivMCQuiz></div>
+<br><INPUT ID="button1" STYLE="position:relative; left:0;" TYPE="button"
+  VALUE="Click here to enter your answer!" onclick="hw25('WrittenAnswer')"><br><br>
+</center>
+<div id="bigout" align="center">
+           <div id="bigbox" style="text-align: left;width:80%;PADDING-RIGHT:15px;PADDING-LEFT:15px;PADDING-BOTTOM:15px;PADDING-TOP:15px;height:auto;margin:10 auto;overflow:visible; font-family:'Arial Unicode MS','Arial','Microsoft Sans Serif';font-size:16pt;font-style:normal;font-weight: normal;background:#ffe;border:1px solid black;
+padding-left:0.8em;"></div>
+         </div>
+<center><form action=post Name=answerform ><p><script type = "text/JavaScript">
+<!---
+document.write('<div id=DivExample></div>');
+//--->
+</script></p>
+&nbsp;&nbsp;&nbsp;<img name="MCQuiz2" src="Resources/Images/arrow1.gif" border="0" width="30" height="30" alt="" align="middle">&nbsp;&nbsp;<span id="A"><input  type="Checkbox"  name=choice value = "A" CHECKED onClick ="checkIt(1);">&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id = "B"><input type="Checkbox"  name=choice value = "" onClick ="checkIt(2);">&nbsp;&nbsp;B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="C"><input type="Checkbox"  name=choice value="" onClick ="checkIt(3);">&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="D"><input type="Checkbox"  name=choice value="" onClick ="checkIt(4);">&nbsp;&nbsp;D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="E"><input type="Checkbox"  name=choice value="" onClick ="checkIt(5);">&nbsp;&nbsp;E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="F"><input type="Checkbox"  name=choice value="" onClick ="checkIt(6);">&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="G"><input type="Checkbox"  name=choice value="" onClick ="checkIt(7);">&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></Form></center>
+<br>
+ <CENTER><FORM action='...'><INPUT id = "continue1" TYPE="BUTTON" VALUE=" Continue Quiz" onClick="newCheck(ans)"></FORM>
+</CENTER>
+<div id="feedbacker">This is the feedback!</div>
+<CENTER>
+<center><INPUT ID="reload1" STYLE="position:relative; left:0;" TYPE="button" onclick='Quit();' value='Reload Quiz'></center>
+ <FORM action='...'><input id= 'calculate1' type='button' onClick='calculate();' value='Calculate Score'>&nbsp;<INPUT id= 'close1' TYPE='button' VALUE='  Close Quiz   ' onClick='wclose()'>&nbsp;<INPUT id = 'submit1'  TYPE='BUTTON' VALUE='Submit Results' onClick="hw3('SQ')"></FORM></CENTER>
+
+
+
+<script type="text/javascript">
+<!--
+function unCheckBox()
+{
+myDoc=document.cCheck;
+if(myDoc.color.checked)
+{
+myDoc.color.checked = !myDoc.color.checked
+myDoc.color.value="";
+}
+}
+function Mycolor(bg){
+unCheckBox();
+if (bg==null){
+return;
+}
+document.bgColor=bg;
+}
+
+function quiz(){
+q=answ;
+if (q==0){
+wclose();
+location.replace("Resources/Images/tac.gif");
+}
+}
+
+document.getElementById('button1').style.visibility = "hidden";
+document.getElementById('reload1').style.visibility = "hidden";
+//-->
+//GetCookie(checkup);
+//--->
+</script>
+
+
+<br>
+<br>
+<![if !IE]>
+<div ID="new">
+</div>
+<![endif]>
+</body>
+</html>
+
+
+
+
+
+
